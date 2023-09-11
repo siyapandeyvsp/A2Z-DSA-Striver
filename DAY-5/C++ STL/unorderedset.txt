@@ -1,0 +1,18 @@
+
+#include <iostream>
+#include <set>
+using namespace std;
+
+int main() {
+    unordered set <int> st;
+    //lower_bound and upper_bound dpesnot wor
+    //all are same functions ,
+    //no order
+    //unique 
+    
+
+//better time complexity
+//0(1)
+//worst case O(n)
+    return 0;
+}

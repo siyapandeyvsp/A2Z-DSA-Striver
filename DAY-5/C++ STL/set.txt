@@ -1,0 +1,36 @@
+//everything unique
+//sorted order 
+//O(log(n)) everything
+
+#include <iostream>
+#include <set>
+using namespace std;
+int main() {
+    set <int> st;
+    
+    st.insert(1);
+    st.emplace(2);
+    st.insert(3);
+    st.insert(4);
+    st.insert(3);
+    //same as vector functions
+    auto it = st.find(3);//iterator points to 3
+    
+    auto it=st.find(6);
+   //if element is not here it always return st.end();points to end of the set
+   st.erase(5);
+   //erases or delete
+   
+   int cnt =st.count(1);//if exist 1 occurance else 0
+   auto it =st.find(3);
+   st.erase(it);//takes constant time
+
+auto it1=st.find(2);
+auto it2=st.find(4);
+st.erase(it1,it2);
+
+auto it=st.lower_bound(2);
+auto it=st.upper_bound(3);
+
+return 0;
+}
