@@ -1,0 +1,18 @@
+bool palindrome(int n)
+{
+    // Write your code here
+    int rev=0,a;
+    a=n;
+    while(n!=0){
+        rev= rev*10+(n%10);
+        n/=10;
+    }
+    
+    if(rev==a){
+        return true;
+    }
+    else{
+        return false;
+        
+    }
+}
