@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main() {
+    
+pair <int,int>p={1,2};
+cout<<p.second<<endl;
+cout<<p.first;
+
+    return 0;
+}
